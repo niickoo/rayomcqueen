@@ -1,0 +1,19 @@
+body{
+    background-image: url(rayofondo.png);
+    background-size: cover;
+    background-position:center ;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+.galeria {
+    background: #fff;
+    margin-top: 150px;
+    padding: 3px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
