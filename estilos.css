@@ -6,8 +6,18 @@ body {
     background-attachment: fixed;
     font-family: sans-serif;
     height: 100vh;
-
 }
+
+.body-fondo {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/rayofondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
 
 .login-box {
     width: 320px;
