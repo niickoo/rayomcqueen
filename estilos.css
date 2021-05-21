@@ -213,5 +213,26 @@ main {
 #btnubi {
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
 
+.divap{
+	background-color: #f6f5f0;
+	border: 2px solid #ccc;
+	text-align: center;
+	margin-top: 5% !important;
+	position: relative;
+	margin: auto;
+	padding: 5px;
+	width: 500px;
+	display: block;
+    justify-content: center;
+    align-items: center;
+	border-radius: 10px;
+	box-shadow: 0px 10px 5px -8px rgba(0,0,0,0.55);
+}
+
+.h2ap{
+	text-align: center;
+	color: #5757DB;
+	margin-bottom: 10px;
 }
