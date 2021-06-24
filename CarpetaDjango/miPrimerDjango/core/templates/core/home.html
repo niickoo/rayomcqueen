@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Hola mundo!</h1>
+    <p> Nombre: {{ nombre }} </p>
+    <p>Edad: {{ edad }}</p>
+    <p>Con Hambre: 
+        {% if conHambre %}
+        si
+        {% else %}
+        no
+        {% endif %}</p>
+    <p>Mi primera Comida: {{ comidas.0 }}</p>
+    <ol>
+        {% for comida in comidas %}
+            <li>{{ comida }}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>{{nombre}} tiene un "hijo" llamado {{hijo.nombre}} que tiene {{hijo.edad}} años</h3>
+
+    <img src="{% static 'core/img/logo nav 175x60.png' %}" />
+
+</body>
+</html>
