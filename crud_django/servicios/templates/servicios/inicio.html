@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Taller mecanico</title>
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css'%}">
+</head>
+
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="http://127.0.0.1:8000/">
+    <img src="static/img/logoooo.png" width="auto" height="80" alt="Logo taller mecanico">
+  </a>
+</nav>
+
+<body background="static/img/fondoo.jpg">
+
+<div class="container">
+
+        <a href="{% url 'aplicacion:create' %}" class="btn btn-outline-dark mt-5">Agregar</a>
+
+        <table class="table table-bordered table-info mt-5 text-center">
+        <thead>
+            <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Vehiculo</th>
+            <th>Taller</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for servicio in servicios %}
+                <tr>
+                    <th>{{ servicio.id }}</th>
+                    <td>{{ servicio.nombre }}</td>
+                    <td>{{ servicio.apellido }}</td>
+                    <td>{{ servicio.vehiculo }}</td>
+                    <td>{{ servicio.taller }}</td>
+                    <td>
+                        <a href="{% url 'aplicacion:detail' servicio.id %}" class="btn btn-danger m-1">Ver mas</a>
+                        <a href="{% url 'aplicacion:update' servicio.id %}" class="btn btn-success m-1">Editar</a>
+                        <a href="{% url 'aplicacion:delete' servicio.id %}" class="btn btn-primary m-1">Eliminar</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+
+</div>
+
+</body>
+
+
+</html>
