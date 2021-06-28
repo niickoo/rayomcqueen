@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super APIs</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="superApi.css" />
+
+</head>
+<body>
+    <div class="content">
+        <ul class="nav nav-pills mb-3" id="apis">
+            <li class="nav-item">
+              <a class="nav-link" id="pokemon" data-toggle="pill" href="#" aria-selected="false">Pokemon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="marvel" data-toggle="pill" href="#" aria-selected="false">Marvel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="sw" data-toggle="pill" href="#" aria-selected="false">Star Wars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="spotify" data-toggle="pill" href="#" aria-selected="false">Spotify</a>
+            </li>
+          </ul>
+
+          <input type="text" class="form-control" id="id-artista" placeholder="id Artista"/>
+          <input type="text" class="form-control" id="token" placeholder="token" />
+          
+        <div class="card-columns" id="listado">
+            <div class="card">
+                <img src="https://i.scdn.co/image/ab67616d00001e02956d9df8453bf69677337b6f" class="card-img-top" alt="How About I Be Me (And You Be You)? [Deluxe]">
+                <div class="card-body">
+                    <h5 class="card-title">How About I Be Me (And You Be You)? [Deluxe]</h5>
+                    <p class="card-text"><b>Fecha de Lanzamiento:</b> 2012-08-07<br><b>Número de Pistas:</b> 12</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+    <script src="superApi.js" ></script>
+</body>
+</html>
